@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-bixolon-bt-printer" version="1.0.0">
+    <name>BixolonBluetoothPrinter</name>
+
+    <description>An Android Cordova plugin that integrate Bixolon Printer with Android Device</description>
+    <license>MIT</license>
+
+    <keywords>bixolon,android,bluetooth,bluetoothprinter</keywords>
+    <repo>https://github.com/andrewphan/cordova-plugin-bixolon-bt-printer.git</repo>
+    <issue>https://github.com/andrewphan/cordova-plugin-bixolon-bt-printer/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.4.0"/>
+    </engines>
+
+    <js-module src="www/BixolonPrinterPlugin.js" name="BixolonPrinter">
+        <clobbers target="window.plugins.bixolonPrinter" />
+    </js-module>
+    <platform name="android">
+        <source-file src="src/android/interfaces/IPrinterManager.java" target-dir="src/com/dn/andrewphan/bixolonprinter/interfaces/" />
+        <source-file src="src/android/utils/BarCodeService.java" target-dir="src/com/dn/andrewphan/bixolonprinter/utils" />
+        <!--<source-file src="src/android/utils/ModelCapability.java" target-dir="src/fr/sellsy/cordova/utils" />-->
+        <!--<source-file src="src/android/utils/Communication.java" target-dir="src/fr/sellsy/cordova/utils" />-->
+        <source-file src="src/android/utils/PrinterSetting.java" target-dir="src/com/dn/andrewphan/bixolonprinter/utils" />
+        <source-file src="src/android/BixolonPrinterManager.java" target-dir="src/com/dn/andrewphan/bixolonprinter" />
+        <source-file src="src/android/BixolonPrinterPlugin.java" target-dir="src/com/dn/andrewphan/bixolonprinter" />
+        <source-file src="src/android/Helper.java" target-dir="src/com/dn/andrewphan/bixolonprinter" />
+
+        <source-file src="src/android/lib/BixolonPrinterV237.jar" target-dir="libs" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="BixolonPrinterPlugin">
+                <param name="android-package" value="com.dn.andrewphan.bixolonprinter.BixolonPrinterPlugin"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*" />
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+        </config-file>
+    </platform>
+</plugin>

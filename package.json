@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-bixolon-bt-printer",
+  "version": "1.0.0",
+  "description": "An Android Cordova plugin that integrate Bixolon Printer with Android Device",
+  "cordova": {
+    "id": "cordova-plugin-bixolon-bt-printer",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewphan/cordova-plugin-bixolon-bt-printer.git"
+  },
+  "keywords": [
+    "Bixolon",
+    "Bluetooth",
+    "BluetoothPrinter",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Andrew Phan <an.phan.chau.truong@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewphan/cordova-plugin-bixolon-bt-printer/issues"
+  },
+  "homepage": "https://github.com/andrewphan/cordova-plugin-bixolon-bt-printer/"
+}
