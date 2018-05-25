@@ -20,7 +20,7 @@
     </js-module>
     <platform name="android">
         <source-file src="src/android/interfaces/IPrinterManager.java" target-dir="src/com/dn/andrewphan/bixolonprinter/interfaces/" />
-        <source-file src="src/android/utils/BarCodeService.java" target-dir="src/com/dn/andrewphan/bixolonprinter/utils" />
+        <source-file src="src/android/utils/BarcodeService.java" target-dir="src/com/dn/andrewphan/bixolonprinter/utils" />
         <!--<source-file src="src/android/utils/ModelCapability.java" target-dir="src/fr/sellsy/cordova/utils" />-->
         <!--<source-file src="src/android/utils/Communication.java" target-dir="src/fr/sellsy/cordova/utils" />-->
         <source-file src="src/android/utils/PrinterSetting.java" target-dir="src/com/dn/andrewphan/bixolonprinter/utils" />
