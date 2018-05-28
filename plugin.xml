@@ -28,7 +28,7 @@
         <source-file src="src/android/BixolonPrinterPlugin.java" target-dir="src/com/dn/andrewphan/bixolonprinter" />
         <source-file src="src/android/Helper.java" target-dir="src/com/dn/andrewphan/bixolonprinter" />
 
-        <source-file src="src/android/lib/BixolonPrinterV237.jar" target-dir="libs" />
+        <source-file src="src/android/libs/BixolonPrinterV237.jar" target-dir="libs" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="BixolonPrinterPlugin">
