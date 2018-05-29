@@ -35,8 +35,8 @@
                 <param name="android-package" value="com.dn.andrewphan.bixolonprinter.BixolonPrinterPlugin"/>
             </feature>
         </config-file>
-        <config-file target="AndroidManifest.xml" parent="/*" />
-        <config-file target="AndroidManifest.xml" parent="/manifest">
+
+        <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.BLUETOOTH" />
             <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
         </config-file>
