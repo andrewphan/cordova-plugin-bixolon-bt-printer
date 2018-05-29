@@ -4,7 +4,7 @@
   "description": "An Android Cordova plugin that integrate Bixolon Printer with Android Device",
   "bundleDependencies": false,
   "cordova": {
-    "id": "cordova-plugin-bixolon-bt-printer",
+    "id": "com.dieboldnixdorf.andrewphan.bixolon",
     "platforms": [
       "android"
     ]
