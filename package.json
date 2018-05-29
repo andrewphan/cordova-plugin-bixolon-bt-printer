@@ -1,5 +1,5 @@
 {
-  "name": "com.dieboldnixdorf.andrewphan.bixolon",
+  "name": "cordova-plugin-bixolon-bt-printer",
   "version": "0.0.1",
   "description": "An Android Cordova plugin that integrate Bixolon Printer with Android Device",
   "bundleDependencies": false,
